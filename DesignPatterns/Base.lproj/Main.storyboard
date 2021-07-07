@@ -78,7 +78,7 @@
         <!--Add new task-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Add new task" id="BYZ-38-t0r" customClass="AddNewViewController" customModule="DesignPatterns" sceneMemberID="viewController">
+                <viewController title="Add new task" id="BYZ-38-t0r" customClass="AddNewViewController" customModule="DesignPatterns" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -205,7 +205,7 @@
         <!--Current tasks-->
         <scene sceneID="tEa-Tb-bdM">
             <objects>
-                <tableViewController title="Current tasks" id="Iup-3L-gEF" customClass="CurrentTasksViewController" customModule="DesignPatterns" sceneMemberID="viewController">
+                <tableViewController title="Current tasks" id="Iup-3L-gEF" customClass="CurrentTasksViewController" customModule="DesignPatterns" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="4iB-Tu-RAE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -250,7 +250,7 @@
         <!--Closed tasks-->
         <scene sceneID="TsO-bC-VKu">
             <objects>
-                <tableViewController title="Closed tasks" id="mwY-RH-VUL" customClass="ClosedTasksTableViewController" customModule="DesignPatterns" sceneMemberID="viewController">
+                <tableViewController title="Closed tasks" id="mwY-RH-VUL" customClass="ClosedTasksTableViewController" customModule="DesignPatterns" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="CQv-wc-TCt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -302,7 +302,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="efO-Wh-lMA"/>
+        <segue reference="KeO-ZE-53k"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="labelColor">

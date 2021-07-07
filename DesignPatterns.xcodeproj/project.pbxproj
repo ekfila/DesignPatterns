@@ -124,6 +124,37 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E5203DDF2695C81000D46F1C /* CurrentTasksMVVM */ = {
+			isa = PBXGroup;
+			children = (
+				E5CB0CEC2670B08400EEBB36 /* CurrentTasksViewController.swift */,
+				E57F8A2B2683343500D1A170 /* TableViewCell.swift */,
+				E57F8A272681384200D1A170 /* CurrentTasksViewModel.swift */,
+			);
+			path = CurrentTasksMVVM;
+			sourceTree = "<group>";
+		};
+		E5203DE02695C98F00D46F1C /* ClosedTasksVIPER */ = {
+			isa = PBXGroup;
+			children = (
+				E5CB0CEE2670B0D200EEBB36 /* ClosedTasksTableViewController.swift */,
+				E5C90563268E18520015D49A /* ClosedTaskCell.swift */,
+				E5C9055B268B77CC0015D49A /* ClosedTasksInteractor.swift */,
+				E5C9055D268B77E00015D49A /* ClosedTasksPresenter.swift */,
+				E5C9055F268B77F30015D49A /* ClosedTasksRouter.swift */,
+				E5C90561268DE3E00015D49A /* ClosedTasksConfigurator.swift */,
+			);
+			path = ClosedTasksVIPER;
+			sourceTree = "<group>";
+		};
+		E5203DE12695C9F800D46F1C /* TaskDetailsMVC */ = {
+			isa = PBXGroup;
+			children = (
+				E5CB0CEA2670B03900EEBB36 /* AddNewViewController.swift */,
+			);
+			path = TaskDetailsMVC;
+			sourceTree = "<group>";
+		};
 		E5CB0CAB2670AB1F00EEBB36 = {
 			isa = PBXGroup;
 			children = (
@@ -155,16 +186,9 @@
 				E5CB0CBD2670AB1F00EEBB36 /* Main.storyboard */,
 				E54CFD3B268B2823000E4C67 /* InitialViewController.swift */,
 				E58F7A632678D02300EE89A1 /* TasksModel.swift */,
-				E5CB0CEA2670B03900EEBB36 /* AddNewViewController.swift */,
-				E5CB0CEC2670B08400EEBB36 /* CurrentTasksViewController.swift */,
-				E57F8A2B2683343500D1A170 /* TableViewCell.swift */,
-				E57F8A272681384200D1A170 /* CurrentTasksViewModel.swift */,
-				E5CB0CEE2670B0D200EEBB36 /* ClosedTasksTableViewController.swift */,
-				E5C90563268E18520015D49A /* ClosedTaskCell.swift */,
-				E5C9055B268B77CC0015D49A /* ClosedTasksInteractor.swift */,
-				E5C9055D268B77E00015D49A /* ClosedTasksPresenter.swift */,
-				E5C9055F268B77F30015D49A /* ClosedTasksRouter.swift */,
-				E5C90561268DE3E00015D49A /* ClosedTasksConfigurator.swift */,
+				E5203DE12695C9F800D46F1C /* TaskDetailsMVC */,
+				E5203DDF2695C81000D46F1C /* CurrentTasksMVVM */,
+				E5203DE02695C98F00D46F1C /* ClosedTasksVIPER */,
 				E5CB0CC32670AB2300EEBB36 /* Assets.xcassets */,
 				E5CB0CC52670AB2300EEBB36 /* LaunchScreen.storyboard */,
 				E5CB0CC82670AB2300EEBB36 /* Info.plist */,

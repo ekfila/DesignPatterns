@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		44900D22A7C1900A53770513 /* Pods_DesignPatterns.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F905D510015B43F92F1319BB /* Pods_DesignPatterns.framework */; };
+		E5203DE526988CFF00D46F1C /* ClosedTasksEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5203DE426988CFF00D46F1C /* ClosedTasksEntities.swift */; };
+		E5203DE72698902C00D46F1C /* CurrentTasksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5203DE62698902C00D46F1C /* CurrentTasksModel.swift */; };
+		E5203DE92698996300D46F1C /* AddNewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5203DE82698996300D46F1C /* AddNewModel.swift */; };
 		E54CFD3C268B2823000E4C67 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54CFD3B268B2823000E4C67 /* InitialViewController.swift */; };
 		E57F8A282681384200D1A170 /* CurrentTasksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57F8A272681384200D1A170 /* CurrentTasksViewModel.swift */; };
 		E57F8A2C2683343500D1A170 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57F8A2B2683343500D1A170 /* TableViewCell.swift */; };
@@ -51,6 +54,9 @@
 /* Begin PBXFileReference section */
 		1214FAB083E3A230EDDDDFA7 /* Pods-DesignPatterns.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesignPatterns.release.xcconfig"; path = "Target Support Files/Pods-DesignPatterns/Pods-DesignPatterns.release.xcconfig"; sourceTree = "<group>"; };
 		B6AFDA01888BC3CCE5B43629 /* Pods-DesignPatterns.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesignPatterns.debug.xcconfig"; path = "Target Support Files/Pods-DesignPatterns/Pods-DesignPatterns.debug.xcconfig"; sourceTree = "<group>"; };
+		E5203DE426988CFF00D46F1C /* ClosedTasksEntities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosedTasksEntities.swift; sourceTree = "<group>"; };
+		E5203DE62698902C00D46F1C /* CurrentTasksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentTasksModel.swift; sourceTree = "<group>"; };
+		E5203DE82698996300D46F1C /* AddNewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewModel.swift; sourceTree = "<group>"; };
 		E54CFD3B268B2823000E4C67 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		E57F8A272681384200D1A170 /* CurrentTasksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentTasksViewModel.swift; sourceTree = "<group>"; };
 		E57F8A2B2683343500D1A170 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
@@ -130,6 +136,7 @@
 				E5CB0CEC2670B08400EEBB36 /* CurrentTasksViewController.swift */,
 				E57F8A2B2683343500D1A170 /* TableViewCell.swift */,
 				E57F8A272681384200D1A170 /* CurrentTasksViewModel.swift */,
+				E5203DE62698902C00D46F1C /* CurrentTasksModel.swift */,
 			);
 			path = CurrentTasksMVVM;
 			sourceTree = "<group>";
@@ -141,6 +148,7 @@
 				E5C90563268E18520015D49A /* ClosedTaskCell.swift */,
 				E5C9055B268B77CC0015D49A /* ClosedTasksInteractor.swift */,
 				E5C9055D268B77E00015D49A /* ClosedTasksPresenter.swift */,
+				E5203DE426988CFF00D46F1C /* ClosedTasksEntities.swift */,
 				E5C9055F268B77F30015D49A /* ClosedTasksRouter.swift */,
 				E5C90561268DE3E00015D49A /* ClosedTasksConfigurator.swift */,
 			);
@@ -151,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				E5CB0CEA2670B03900EEBB36 /* AddNewViewController.swift */,
+				E5203DE82698996300D46F1C /* AddNewModel.swift */,
 			);
 			path = TaskDetailsMVC;
 			sourceTree = "<group>";
@@ -396,10 +405,13 @@
 				E5C90562268DE3E00015D49A /* ClosedTasksConfigurator.swift in Sources */,
 				E58F7A642678D02300EE89A1 /* TasksModel.swift in Sources */,
 				E57F8A2C2683343500D1A170 /* TableViewCell.swift in Sources */,
+				E5203DE92698996300D46F1C /* AddNewModel.swift in Sources */,
 				E57F8A282681384200D1A170 /* CurrentTasksViewModel.swift in Sources */,
 				E5C9055E268B77E00015D49A /* ClosedTasksPresenter.swift in Sources */,
 				E54CFD3C268B2823000E4C67 /* InitialViewController.swift in Sources */,
+				E5203DE526988CFF00D46F1C /* ClosedTasksEntities.swift in Sources */,
 				E5CB0CB82670AB1F00EEBB36 /* AppDelegate.swift in Sources */,
+				E5203DE72698902C00D46F1C /* CurrentTasksModel.swift in Sources */,
 				E5C9055C268B77CC0015D49A /* ClosedTasksInteractor.swift in Sources */,
 				E5CB0CC22670AB1F00EEBB36 /* DesignPatterns.xcdatamodeld in Sources */,
 				E5C90564268E18520015D49A /* ClosedTaskCell.swift in Sources */,

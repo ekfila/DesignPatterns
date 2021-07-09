@@ -20,8 +20,9 @@ class InitialViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "AddNewTask" {
-            //let vc = segue.destination as! AddNewViewController
-            Status.shared.state = .add
+            let vc = segue.destination as! AddNewViewController
+            vc.task = nil
+            //Status.shared.state = .add
         }
     }
     

@@ -22,6 +22,5 @@ class ClosedTasksConfigurator: ClosedTasksConfiguratorProtocol {
         presenter.interactor = interactor
         presenter.router = router
         router.viewController = viewController
-        
     }
 }

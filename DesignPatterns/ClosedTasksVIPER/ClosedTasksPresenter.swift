@@ -15,8 +15,8 @@ protocol ClosedTasksPresenterProtocol {
     
     func getTaskTitle(for id: Int) -> String?
     func getTaskStatus(for id: Int) -> Int?
-    
-    
+    func getStatusString(for status: Int) -> String?
+
     func cellClicked(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
 }
 
@@ -31,6 +31,11 @@ class ClosedTasksPresenter: ClosedTasksPresenterProtocol {
     
     func getTaskStatus(for id: Int) -> Int? {
         return interactor.getTask(for: id)?.status
+    }
+    
+    func getStatusString(for status: Int) -> String? {
+        return
+            interactor.statusToString(status: status)
     }
     
     func cellClicked(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

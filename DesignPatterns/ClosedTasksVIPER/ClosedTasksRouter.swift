@@ -17,9 +17,6 @@ class ClosedTasksRouter: ClosedTasksRouterProtocol {
     
     func openTask(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at: indexPath)
-        print("PPPPPPperformSegue")
-
         viewController.performSegue(withIdentifier: "showOldTask", sender: cell)
-        print("PPPPPPperformSegue")
     }
 }

@@ -12,7 +12,7 @@ class CurrentTasksViewController: UITableViewController {
 
     @IBOutlet weak var currentTasksTableView: UITableView!
     
-    let viewModel = CurrentTasksViewModel()
+    let viewModel: ViewModelProtocol = CurrentTasksViewModel()
     
     override func viewWillAppear(_ animated: Bool) {
         
@@ -32,10 +32,7 @@ class CurrentTasksViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
         let cell = tableView.cellForRow(at: indexPath)
-        
-        //print("performSegue")
         performSegue(withIdentifier: "showTask", sender: cell)
     }
     
@@ -44,7 +41,7 @@ class CurrentTasksViewController: UITableViewController {
             let taskId = cell.taskId!
             if segue.identifier == "showTask" {
                 let vc = segue.destination as! AddNewViewController
-                Status.shared.state = .active
+                //Status.shared.state = .active
                 let task = viewModel.getTask(for: taskId)!
                 vc.task = task
             }

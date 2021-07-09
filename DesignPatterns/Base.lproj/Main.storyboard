@@ -192,6 +192,7 @@
                     <navigationItem key="navigationItem" id="mqv-wk-qxi"/>
                     <connections>
                         <outlet property="addButton" destination="1Px-4z-Qa5" id="RPF-GG-I9r"/>
+                        <outlet property="dateCreation" destination="Nog-h2-W59" id="O9M-JF-w0q"/>
                         <outlet property="deadlinePicker" destination="6EM-vz-yzm" id="2F8-Wp-dWJ"/>
                         <outlet property="descriptTextView" destination="SYk-zT-vUl" id="8l5-PN-fPW"/>
                         <outlet property="statePicker" destination="Dnj-Mj-F2s" id="8bc-VE-WTO"/>

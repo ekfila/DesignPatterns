@@ -8,7 +8,12 @@
 import Foundation
 import Bond
 
-class CurrentTasksViewModel {
+protocol ViewModelProtocol {
+    var idOfCurrentTasks: MutableObservableArray<Int> {get}
+    func getTask(for id: Int) -> Task?
+}
+
+class CurrentTasksViewModel : ViewModelProtocol {    
     
     var tasks = RealmListOfTasks.shared.realmTasks.objects(Task.self)
         
